@@ -1,4 +1,17 @@
 *
 
 !.gitignore
+!.gitconfig
+
+!.bashrc
+!.bash_profile
+!.bash_logout
+
+!.zshrc
+
+!.tmux.conf
+
+!.vimrc
+
+!.xinitrc
 
