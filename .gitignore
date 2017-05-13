@@ -6,7 +6,6 @@
 !.bashrc
 !.bash_profile
 !.bash_logout
-
 !.zshrc
 
 !.tmux.conf
@@ -14,4 +13,19 @@
 !.vimrc
 
 !.xinitrc
+
+!.config
+
+# htop
+!.config/htop
+!.config/htop/*
+
+# i3
+!.config/i3
+!.config/i3/*
+
+# xfce4-terminal
+!.config/xfce4
+!.config/xfce4/terminal
+!.config/xfce4/terminal/*
 
