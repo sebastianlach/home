@@ -29,3 +29,6 @@
 !.config/xfce4/terminal
 !.config/xfce4/terminal/*
 
+# fonts
+!.fonts
+!.fonts/*
