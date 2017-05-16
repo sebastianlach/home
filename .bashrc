@@ -1,6 +1,7 @@
 #
 # ~/.bashrc
 #
+export PATH=$PATH:/opt/pycharm/bin
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
