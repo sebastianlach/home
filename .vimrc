@@ -23,10 +23,10 @@ let g:ctrlp_custom_ignore = {
 " Packages {
 
     filetype off
-    set rtp+=~/.vim/bundle/Vundle.vim
+    set rtp+=~/.vim/Vundle.vim
     call vundle#begin()
 
-    Plugin 'gmarik/Vundle.vim'       " Vim plugins manager
+    Plugin 'VundleVim/Vundle.vim'       " Vim plugins manager
     Plugin 'tpope/vim-sensible'      " Defaults everyone can agree on
     Plugin 'tpope/vim-fugitive'      " Git wrapper
     Plugin 'slim-template/vim-slim'  " Slim syntax highlighting
