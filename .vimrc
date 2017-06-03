@@ -11,7 +11,6 @@
 set nocompatible " State explicitly vi-compatible mode off
 set encoding=utf-8
 set fileencoding=utf-8
-
 "let g:airline_powerline_fonts = 1
 "let g:airline_theme='solarized'
 "let g:ctrlp_working_path_mode = 0
@@ -61,6 +60,10 @@ let g:ctrlp_custom_ignore = {
     set cindent         " Enable automatic C-style indenting
 " }
 
+" Line length {
+    set colorcolumn=80
+    highlight ColorColumn ctermbg=Blue
+" }
 
 " Hotkeys Mapping {
     " Tabs navigation binding
