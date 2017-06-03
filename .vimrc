@@ -11,8 +11,6 @@
 set nocompatible " State explicitly vi-compatible mode off
 set encoding=utf-8
 set fileencoding=utf-8
-"let g:airline_powerline_fonts = 1
-"let g:airline_theme='solarized'
 
 " Packages {
 
@@ -27,13 +25,13 @@ set fileencoding=utf-8
     Plugin 'scrooloose/syntastic'    " Syntax checking hacks
     Plugin 'ctrlpvim/ctrlp.vim'      " Dynamic file explorer
     Plugin 'airblade/vim-gitgutter'  " Shows a git diff in the gutter
-    "Plugin 'vim-airline/vim-airline'
-    "Plugin 'vim-airline/vim-airline-themes'
- 
+    Plugin 'vim-airline/vim-airline' " Improved status bar
+    Plugin 'vim-airline/vim-airline-themes'
+
     call vundle#end()
     filetype plugin indent on
-" }
 
+" }
 
 " General {
     syntax on           " Enable syntax highlight
@@ -45,7 +43,6 @@ set fileencoding=utf-8
     set hlsearch        " Highlight all matches
     set number          " Show line numbers
 " }
-
 
 " Tabing & indent {
     set tabstop=4       " Set tab width
@@ -73,6 +70,11 @@ set fileencoding=utf-8
     " ChromeOS keyboard layout binding
     map <C-a> <Home>
     map <C-e> <End>
+" }
+
+" Plugin Airline {
+    let g:airline_powerline_fonts=1
+    let g:airline_theme='solarized'
 " }
 
 " Plugin CtrlP {
