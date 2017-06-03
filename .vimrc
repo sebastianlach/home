@@ -13,11 +13,6 @@ set encoding=utf-8
 set fileencoding=utf-8
 "let g:airline_powerline_fonts = 1
 "let g:airline_theme='solarized'
-"let g:ctrlp_working_path_mode = 0
-let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\.git$\|\.hg$\|\.svn$',
-    \ 'file': '\.pyc$'
-    \ }
 
 " Packages {
 
@@ -52,7 +47,7 @@ let g:ctrlp_custom_ignore = {
 " }
 
 
-" Tabing & Indent {
+" Tabing & indent {
     set tabstop=4       " Set tab width
     set shiftwidth=4    " Tab width for reindent operations
     set expandtab       " Insert spaces instead of tabsg
@@ -65,7 +60,7 @@ let g:ctrlp_custom_ignore = {
     highlight ColorColumn ctermbg=Blue
 " }
 
-" Hotkeys Mapping {
+" Hotkeys mapping {
     " Tabs navigation binding
     map <C-l> :tabn<CR>
     map <C-h> :tabp<CR>
@@ -78,5 +73,13 @@ let g:ctrlp_custom_ignore = {
     " ChromeOS keyboard layout binding
     map <C-a> <Home>
     map <C-e> <End>
+" }
+
+" Plugin CtrlP {
+    let g:ctrlp_working_path_mode = 'r'
+    let g:ctrlp_custom_ignore = {
+        \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+        \ 'file': '\.pyc$'
+        \ }
 " }
 
