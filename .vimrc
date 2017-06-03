@@ -1,11 +1,11 @@
 " Header {
 "   File:           ~/.vimrc
-"   Version:        0.4
+"   Version:        0.5
 "   Author:         Sebastian Łach <root@slach.eu>
 "   Created:        6th June 2011
-"   Updated:        18th May 2016
+"   Updated:        3rd June 2017
 "   URL:            http://www.slach.eu/
-"   Description:    A minimal .vimrc file.
+"   Description:    A reasonable .vimrc file.
 " }
 
 set nocompatible " State explicitly vi-compatible mode off
@@ -25,13 +25,13 @@ let g:ctrlp_custom_ignore = {
     set rtp+=~/.vim/Vundle.vim
     call vundle#begin()
 
-    Plugin 'VundleVim/Vundle.vim'       " Vim plugins manager
+    Plugin 'VundleVim/Vundle.vim'    " Vim plugins manager
     Plugin 'tpope/vim-sensible'      " Defaults everyone can agree on
-    Plugin 'tpope/vim-fugitive'      " Git wrapper
+    Plugin 'tpope/vim-fugitive'      " Git commands wrapper
     Plugin 'slim-template/vim-slim'  " Slim syntax highlighting
     Plugin 'scrooloose/syntastic'    " Syntax checking hacks
-    Plugin 'ctrlpvim/ctrlp.vim'
-    Plugin 'airblade/vim-gitgutter'
+    Plugin 'ctrlpvim/ctrlp.vim'      " Dynamic file explorer
+    Plugin 'airblade/vim-gitgutter'  " Shows a git diff in the gutter
     "Plugin 'vim-airline/vim-airline'
     "Plugin 'vim-airline/vim-airline-themes'
  
