@@ -3,3 +3,5 @@
 	name = Sebastian Łach
 [push]
 	default = simple
+[merge]
+	tool = vimdiff
