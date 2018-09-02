@@ -32,6 +32,7 @@
 !.config/xfce4/terminal/terminalrc
 
 # cache
+!.cache
 !.cache/chromium
 
 # fonts
