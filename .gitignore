@@ -13,6 +13,7 @@
 !.vimrc
 !.vim
 !.vim/*
+!.vim/bundle/Vundle.vim
 
 !.xinitrc
 
