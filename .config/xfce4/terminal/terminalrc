@@ -32,6 +32,3 @@ TabActivityColor=#dc322f
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 MiscCopyOnSelect=TRUE
 MiscSlimTabs=FALSE
-BackgroundMode=TERMINAL_BACKGROUND_IMAGE
-BackgroundImageShading=0.000000
-
