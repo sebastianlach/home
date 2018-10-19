@@ -1,12 +1,11 @@
 # history configuration
-HISTFILE="$HOME/.zsh_history"
+HISTFILE="$HOME/.history"
 HISTSIZE=999999999
 SAVEHIST=$HISTSIZE
 
 # prompt configuration
-autoload -Uz promptinit
-promptinit
-prompt walters
+PROMPT="%F{green}%n%f@%m%f %F{yellow}%1~%f %# "
+RPROMPT="[%F{${1:-green}}%~%f]"
 
 # enable syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
