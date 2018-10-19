@@ -2,6 +2,7 @@
 HISTFILE="$HOME/.history"
 HISTSIZE=999999999
 SAVEHIST=$HISTSIZE
+setopt SHARE_HISTORY
 
 # prompt configuration
 PROMPT="%F{green}%n%f@%m%f %F{yellow}%1~%f %# "
