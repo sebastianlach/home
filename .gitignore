@@ -1,23 +1,27 @@
 *
 
+!LICENSE
+!.xinitrc
+!.config
+
+# git
 !.gitignore
 !.gitconfig
 
+# shell
 !.bashrc
 !.bash_profile
 !.bash_logout
 !.zshrc
 
+# tmux
 !.tmux.conf
 
+# vim
 !.vimrc
 !.vim
 !.vim/*
 !.vim/bundle/Vundle.vim
-
-!.xinitrc
-
-!.config
 
 # htop
 !.config/htop
