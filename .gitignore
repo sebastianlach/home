@@ -40,6 +40,8 @@
 !.cache
 !.cache/chromium
 
-# fonts
-!.fonts
-!.fonts/*
+# local
+!.local
+!.local/share
+!.local/share/fonts
+!.local/share/fonts/*
