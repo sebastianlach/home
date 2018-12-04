@@ -38,7 +38,7 @@
 
 # cache
 !.cache
-!.cache/chromium
+!.cache/*
 
 # local
 !.local
