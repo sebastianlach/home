@@ -45,4 +45,4 @@
 !.local/share
 !.local/share/fonts
 !.local/share/fonts/*
-!.local/share/fonts/.uuid
+.local/share/fonts/.uuid
