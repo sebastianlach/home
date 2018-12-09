@@ -34,7 +34,6 @@ bindsym XF86AudioRaiseVolume exec "amixer -q set Master 2dB+ unmute"
 bindsym XF86AudioMute exec "amixer -q set Master toggle"
 bindsym XF86AudioMicMute exec "i3-nagbar -t warning -m 'You pressed !XF86AudioMicMute! bindsym.' -b 'OK' 'exit 0'"
 bindsym XF86TouchpadToggle exec "i3-nagbar -t warning -m 'You pressed !XF86TouchpadToggle! bindsym.' -b 'OK' 'exit 0'"
-bindsym XF86RFKill exec "i3-nagbar -t warning -m 'You pressed !XF86RFKill! bindsym.' -b 'OK' 'exit 1'"
 bindsym XF86Sleep exec "i3-nagbar -t warning -m 'You pressed !XF86RFSleep! bindsym.' -b 'OK' 'exit 1'"
 
 # bindsym FN keys
