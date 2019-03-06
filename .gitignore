@@ -1,12 +1,17 @@
 *
 
 !LICENSE
+
+# xserver
 !.xinitrc
+
+# config
 !.config
 
 # git
 !.gitignore
 !.gitconfig
+!.gitmodules
 
 # shell
 !.bashrc
@@ -26,6 +31,10 @@
 # htop
 !.config/htop
 !.config/htop/*
+
+# mplayer
+!.mplayer
+!.mplayer/config
 
 # i3
 !.config/i3
