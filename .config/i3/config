@@ -31,8 +31,6 @@ bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
 bindsym XF86AudioLowerVolume exec "amixer -q set Master 2dB- unmute"
 bindsym XF86AudioRaiseVolume exec "amixer -q set Master 2dB+ unmute"
-bindsym XF86AudioMute exec "amixer -q set Master toggle"
-bindsym XF86AudioMicMute exec "i3-nagbar -t warning -m 'You pressed !XF86AudioMicMute! bindsym.' -b 'OK' 'exit 0'"
 bindsym XF86TouchpadToggle exec "i3-nagbar -t warning -m 'You pressed !XF86TouchpadToggle! bindsym.' -b 'OK' 'exit 0'"
 bindsym XF86Sleep exec "i3-nagbar -t warning -m 'You pressed !XF86RFSleep! bindsym.' -b 'OK' 'exit 1'"
 
