@@ -21,9 +21,10 @@ floating_modifier $mod
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+Tab exec "dmenu_run"
-bindsym $mod+Return exec "i3-dmenu-desktop"
+bindsym $mod+Return exec "dmenu_run"
+bindsym $mod+Tab exec "i3-dmenu-desktop"
 bindsym $mod+space exec "i3-dmenu-desktop"
+bindsym $mod+L exec "slimlock"
 
 # bindsym XF86 keys
 bindsym XF86Search exec "dmenu_run"
