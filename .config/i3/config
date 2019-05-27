@@ -150,5 +150,6 @@ bar {
     status_command i3status
 }
 
-# display splash
-exec feh --bg-center ~/.config/images/arch.png
+# set wallpaper
+exec feh --bg-center ~/.config/wallpaper.png
+
