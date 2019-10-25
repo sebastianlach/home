@@ -1,9 +1,9 @@
 " Header {
 "   File:           ~/.vimrc
-"   Version:        0.5
+"   Version:        0.6
 "   Author:         Sebastian Łach <root@slach.eu>
 "   Created:        6th June 2011
-"   Updated:        3rd June 2017
+"   Updated:        25th October 2019
 "   URL:            http://www.slach.eu/
 "   Description:    A reasonable .vimrc file.
 " }
@@ -15,20 +15,6 @@ set fileencoding=utf-8
 " Packages {
 
     filetype off
-    set rtp+=~/.vim/bundle/Vundle.vim
-    call vundle#begin()
-
-    Plugin 'VundleVim/Vundle.vim'    " Vim plugins manager
-    Plugin 'tpope/vim-sensible'      " Defaults everyone can agree on
-    Plugin 'tpope/vim-fugitive'      " Git commands wrapper
-    Plugin 'slim-template/vim-slim'  " Slim syntax highlighting
-    Plugin 'scrooloose/syntastic'    " Syntax checking hacks
-    Plugin 'ctrlpvim/ctrlp.vim'      " Dynamic file explorer
-    Plugin 'airblade/vim-gitgutter'  " Shows a git diff in the gutter
-    Plugin 'vim-airline/vim-airline' " Improved status bar
-    Plugin 'vim-airline/vim-airline-themes'
-
-    call vundle#end()
     filetype plugin indent on
 
 " }
