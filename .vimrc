@@ -1,9 +1,9 @@
 " Header {
 "   File:           ~/.vimrc
-"   Version:        0.6
+"   Version:        0.7
 "   Author:         Sebastian Łach <root@slach.eu>
 "   Created:        6th June 2011
-"   Updated:        25th October 2019
+"   Updated:        6th September 2020
 "   URL:            http://www.slach.eu/
 "   Description:    A reasonable .vimrc file.
 " }
@@ -13,10 +13,13 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 " Packages {
-
     filetype off
     filetype plugin indent on
-
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+    Plugin 'VundleVim/Vundle.vim'
+    Plugin 'ctrlpvim/ctrlp.vim'
+    call vundle#end()
 " }
 
 " General {
@@ -56,11 +59,6 @@ set fileencoding=utf-8
     " ChromeOS keyboard layout binding
     map <C-a> <Home>
     map <C-e> <End>
-" }
-
-" Plugin Airline {
-    let g:airline_powerline_fonts=1
-    let g:airline_theme='solarized'
 " }
 
 " Plugin CtrlP {
