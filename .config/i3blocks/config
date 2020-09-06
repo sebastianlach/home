@@ -1,0 +1,12 @@
+[ip]
+command=hostname -i | awk '{ print "IP:" $1 }'
+interval=60
+color=#91E78B
+
+[battery]
+command=acpi
+interval=30
+
+[time]
+command=date +%T
+interval=5

@@ -40,6 +40,10 @@
 !.config/i3
 !.config/i3/*
 
+# i3blocks
+!.config/i3blocks
+!.config/i3blocks/*
+
 # xfce4-terminal
 !.config/xfce4
 !.config/xfce4/terminal
