@@ -8,5 +8,5 @@ command=acpi
 interval=30
 
 [time]
-command=date +%T
-interval=5
+command=date "+%A, %d.%m.%Y %T"
+interval=1
