@@ -62,3 +62,9 @@
 !.local/share/fonts
 !.local/share/fonts/*
 .local/share/fonts/.*
+
+# systemd
+!.config/systemd
+!.config/systemd/user
+!.config/systemd/user/default.target.wants
+!.config/systemd/user/default.target.wants/*
