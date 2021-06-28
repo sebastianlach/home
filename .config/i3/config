@@ -11,6 +11,7 @@ set $key 133
 set $dmenu i3-dmenu-desktop
 set $prompt i3-nagbar -t warning -m 'Message' -b 'OK' 'exit 0'
 set $terminal i3-sensible-terminal
+set $scrot scrot
 
 # default
 new_window none
@@ -28,6 +29,7 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
 bindsym XF86AudioLowerVolume exec "amixer -q set Master 2dB- unmute"
 bindsym XF86AudioRaiseVolume exec "amixer -q set Master 2dB+ unmute"
 bindsym XF86Sleep exec $prompt -m 'Sleep'
+bindsym $super+F5 exec $scrot
 
 # bindsym FN keys
 bindsym Print exec "scrot '%Y%m%d_$wx$h.png'"
