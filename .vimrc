@@ -64,7 +64,7 @@ set fileencoding=utf-8
 " Plugin CtrlP {
     let g:ctrlp_working_path_mode = 'r'
     let g:ctrlp_custom_ignore = {
-        \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+        \ 'dir':  '\.git$\|\.hg$\|\.svn$\|venv$',
         \ 'file': '\.pyc$'
         \ }
 " }
