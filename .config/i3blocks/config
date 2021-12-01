@@ -1,5 +1,5 @@
 [battery]
-command=acpi
+command=sh -c "acpi | cut -d',' -f2-"
 interval=30
 
 [time]

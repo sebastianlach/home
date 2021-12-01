@@ -8,22 +8,22 @@ set $super Mod4
 set $key 133
 
 # commands
-set $dmenu i3-dmenu-desktop
+set $launcher rofi -show run
 set $prompt i3-nagbar -t warning -m 'Message' -b 'OK' 'exit 0'
 set $terminal i3-sensible-terminal
 set $scrot scrot
 
 # default
 new_window none
-font pango:Inconsolata 12
+font pango:Inconsolata Bold 16
 
-# start dmenu (a program launcher)
-bindsym $mod+Return exec $dmenu
+# start launcher
+bindsym $mod+Return exec $launcher
 bindsym $super+Return exec $terminal
-bindcode --release $key exec $dmenu
+bindcode --release $key exec $launcher
 
 # bindsym XF86 keys
-bindsym XF86Search exec $dmenu
+bindsym XF86Search exec $launcher
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
 bindsym XF86AudioLowerVolume exec "amixer -q set Master 2dB- unmute"
@@ -70,8 +70,10 @@ bindsym F2 workspace $ws2
 bindsym F3 workspace $ws3
 bindsym F4 workspace $ws4
 
-# startup
+# assign windows to workspaces
 assign [class="Xfce4-terminal"] $ws1
+assign [class="Opera"] $ws2
+assign [class="Firefox"] $ws2
 assign [class="Chromium"] $ws2
 
 # top bar
@@ -82,7 +84,7 @@ bar {
     strip_workspace_numbers yes
     tray_output primary
     tray_padding 0
-    font pango:Convergence FontAwesome, Icons 12
+    font pango:Inconsolata Bold 16
     separator_symbol |
 
     colors {
@@ -100,4 +102,4 @@ bar {
 # execute statup
 exec --no-startup-id feh --bg-center ~/.config/wallpaper.png
 exec --no-startup-id i3-sensible-terminal
-exec --no-startup-id chromium
+exec --no-startup-id opera
