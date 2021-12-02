@@ -8,7 +8,7 @@ set $super Mod4
 set $key 133
 
 # commands
-set $launcher rofi -show run
+set $launcher rofi -theme solarized -font "Inconsolata Bold 16" -show run
 set $prompt i3-nagbar -t warning -m 'Message' -b 'OK' 'exit 0'
 set $terminal i3-sensible-terminal
 set $scrot scrot
