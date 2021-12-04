@@ -24,6 +24,7 @@
 
 # tmux
 !.tmux.conf
+!.tmux.sh
 
 # vim
 !.vimrc
