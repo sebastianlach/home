@@ -1,2 +1,1 @@
-echo -n $( hostname ) @ $( uname -s ) | tr '[:upper:]' '[:lower:]'
-echo -n -$( uname -r | cut -d "-" -f1 )
+echo -n $( uptime -p )' '$( cat /proc/loadavg | cut -d' ' -f1-3 )
