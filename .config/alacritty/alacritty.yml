@@ -10,16 +10,10 @@ scrolling:
 tabspaces: 4
 
 font:
+  size: 8
   normal:
-    family: Inconsolata
+    family: FiraMonoforPowerline
     style: Bold
-  bold:
-    family: Inconsolata
-    style: Bold
-  italic:
-    family: Inconsolata
-    style: Bold Italic
-  size: 9
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
