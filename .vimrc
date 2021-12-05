@@ -1,25 +1,22 @@
 " Header {
 "   File:           ~/.vimrc
-"   Version:        0.7
+"   Version:        0.8
 "   Author:         Sebastian Łach <root@slach.eu>
 "   Created:        6th June 2011
-"   Updated:        6th September 2020
+"   Updated:        5th December 2021
 "   URL:            http://www.slach.eu/
 "   Description:    A reasonable .vimrc file.
 " }
 
-set nocompatible " State explicitly vi-compatible mode off
-set encoding=utf-8
-set fileencoding=utf-8
+" Encoding {
+    set nocompatible
+    set encoding=utf-8
+    set fileencoding=utf-8
+" }
 
 " Packages {
     filetype off
     filetype plugin indent on
-    set rtp+=~/.vim/bundle/Vundle.vim
-    call vundle#begin()
-    Plugin 'VundleVim/Vundle.vim'
-    Plugin 'ctrlpvim/ctrlp.vim'
-    call vundle#end()
 " }
 
 " General {
@@ -43,7 +40,7 @@ set fileencoding=utf-8
 
 " Line length {
     set colorcolumn=80
-    highlight ColorColumn ctermbg=Blue
+    highlight ColorColumn ctermbg=Black
 " }
 
 " Hotkeys mapping {
@@ -69,3 +66,12 @@ set fileencoding=utf-8
         \ }
 " }
 
+" Plugin Airline {
+    let g:airline_powerline_fonts = 1
+    let g:airline_theme='cool'
+    let g:airline_symbols = {}
+    let g:airline_symbols.linenr = '#'
+    let g:airline_symbols.dirty='#'
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#formatter = 'unique_tail'
+" }
