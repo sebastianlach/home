@@ -1,21 +1,18 @@
-# i3 config file (v4)
-#
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
-
 # keys
 set $mod Mod1
 set $super Mod4
 set $key 133
 
 # commands
-set $launcher rofi -theme solarized -font "Inconsolata Bold 16" -show run
+set $launcher rofi -theme solarized -font "FiraMonoforPowerline Bold 10" -show run
 set $prompt i3-nagbar -t warning -m 'Message' -b 'OK' 'exit 0'
-set $terminal i3-sensible-terminal
+set $terminal alacritty
+set $browser opera
 set $scrot scrot
 
 # default
 new_window none
-font pango:Inconsolata Bold 16
+font pango:FiraMonoforPowerline Bold 10
 
 # start launcher
 bindsym $mod+Return exec $launcher
@@ -71,7 +68,7 @@ bindsym F3 workspace $ws3
 bindsym F4 workspace $ws4
 
 # assign windows to workspaces
-assign [class="Xfce4-terminal"] $ws1
+assign [class="Alacritty"] $ws1
 assign [class="Opera"] $ws2
 assign [class="Firefox"] $ws2
 assign [class="Chromium"] $ws2
@@ -84,7 +81,6 @@ bar {
     strip_workspace_numbers yes
     tray_output primary
     tray_padding 0
-    font pango:Inconsolata Bold 16
     separator_symbol |
 
     colors {
@@ -101,5 +97,5 @@ bar {
 
 # execute statup
 exec --no-startup-id feh --bg-center ~/.config/wallpaper.png
-exec --no-startup-id alacritty
-exec --no-startup-id opera
+exec --no-startup-id $terminal
+exec --no-startup-id $browser
