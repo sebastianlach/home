@@ -48,10 +48,9 @@
 !.config/i3blocks
 !.config/i3blocks/*
 
-# xfce4-terminal
-!.config/xfce4
-!.config/xfce4/terminal
-!.config/xfce4/terminal/terminalrc
+# alacritty
+!.config/alacritty
+!.config/alacritty/*
 
 # cache
 !.cache

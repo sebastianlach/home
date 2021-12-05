@@ -101,5 +101,5 @@ bar {
 
 # execute statup
 exec --no-startup-id feh --bg-center ~/.config/wallpaper.png
-exec --no-startup-id i3-sensible-terminal
+exec --no-startup-id alacritty
 exec --no-startup-id opera
