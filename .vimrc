@@ -56,6 +56,8 @@
     " ChromeOS keyboard layout binding
     map <C-a> <Home>
     map <C-e> <End>
+    " Paste toggle
+    set pastetoggle=<C-d>
 " }
 
 " Plugin CtrlP {
