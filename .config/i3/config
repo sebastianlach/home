@@ -29,7 +29,7 @@ bindsym XF86Sleep exec $prompt -m 'Sleep'
 bindsym $super+F5 exec $scrot
 
 # bindsym FN keys
-bindsym Print exec "scrot '%Y%m%d_$wx$h.png'"
+bindsym Print exec "scrot '%Y%m%d.png'"
 bindsym Insert exec $prompt -m 'Insert'
 bindsym Num_Lock exec $prompt -m 'Num lock'
 
@@ -66,12 +66,14 @@ bindsym F1 workspace $ws1
 bindsym F2 workspace $ws2
 bindsym F3 workspace $ws3
 bindsym F4 workspace $ws4
+bindsym F5 exec "scrot '%Y%m%d.png'"
 
 # assign windows to workspaces
 assign [class="Alacritty"] $ws1
 assign [class="Opera"] $ws2
 assign [class="Firefox"] $ws2
 assign [class="Chromium"] $ws2
+assign [class="(?i)mplayer"] $ws4
 
 # top bar
 bar {

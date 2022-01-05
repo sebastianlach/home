@@ -1,1 +1,1 @@
-echo -n $( uptime -p )' '$( cat /proc/loadavg | cut -d' ' -f1-3 )
+echo -n $( uptime -p )' | '$( cat /proc/loadavg | cut -d' ' -f1-3 )
