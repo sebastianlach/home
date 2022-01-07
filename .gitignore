@@ -28,9 +28,6 @@
 
 # vim
 !.vimrc
-!.vim
-!.vim/*
-!.vim/bundle/Vundle.vim
 
 # htop
 !.config/htop
