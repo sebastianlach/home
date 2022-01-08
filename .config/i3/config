@@ -7,7 +7,7 @@ set $key 133
 set $launcher rofi -theme solarized -font "FiraMonoforPowerline Bold 10" -show run
 set $prompt i3-nagbar -t warning -m 'Message' -b 'OK' 'exit 0'
 set $terminal alacritty
-set $browser opera
+set $browser brave
 set $scrot scrot
 
 # default
@@ -70,7 +70,7 @@ bindsym F5 exec "scrot '%Y%m%d.png'"
 
 # assign windows to workspaces
 assign [class="Alacritty"] $ws1
-assign [class="Opera"] $ws2
+assign [class="Brave"] $ws2
 assign [class="Firefox"] $ws2
 assign [class="Chromium"] $ws2
 assign [class="(?i)mplayer"] $ws4
