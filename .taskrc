@@ -1,0 +1,40 @@
+# server
+taskd.certificate=~/.task/cert.pem
+taskd.key=~/.task/key.pem
+taskd.ca=~/.task/ca.pem
+taskd.server=inthe.am:53589
+taskd.credentials=inthe_am/root/c0e272b8-fa51-4f4c-a7e0-e12336d90237
+taskd.trust=strict
+
+# global
+confirmation=off
+dateformat=Y-M-D H:N
+default.command=dashboard
+print.empty.columns=yes
+
+# appearance
+include /usr/share/doc/task/rc/no-color.theme
+
+# dashboard report
+report.dashboard.description=Task dashboard
+report.dashboard.columns=id,project,priority,description.count,due,tags,recur,scheduled
+report.dashboard.labels=id,project,prority,description,due,tags,recuring,scheduled
+report.dashboard.sort=priority-,project+,entry+
+report.dashboard.filter=(status:waiting or status:pending or status:active) and project.none:
+
+# birthday report
+report.birthday.description=Birthdays
+report.birthday.columns=id,description.count,due,scheduled
+report.birthday.labels=id,description,due,scheduled
+report.birthday.sort=due+
+report.birthday.filter=(status:waiting or status:pending or status:active) and (project:birthday)
+
+# rest report
+report.rest.description=Task rest
+report.rest.columns=id,project,priority,description.count,due
+report.rest.labels=id,project,priority,description,due
+report.rest.sort=due+\/,project+\/,entry+
+report.rest.filter=+PROJECT (status:pending or status:active)
+
+# news
+news.version=2.6.0
