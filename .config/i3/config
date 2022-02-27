@@ -7,7 +7,7 @@ set $key 133
 set $launcher rofi -theme solarized -font "FiraMonoforPowerline Bold 10" -show run
 set $prompt i3-nagbar -t warning -m 'Message' -b 'OK' 'exit 0'
 set $terminal alacritty
-set $browser opera
+set $browser firefox
 set $scrot scrot
 
 # default
