@@ -26,10 +26,6 @@
 # vim
 !.vimrc
 
-# htop
-!.config/htop
-!.config/htop/*
-
 # mplayer
 !.mplayer
 !.mplayer/config
