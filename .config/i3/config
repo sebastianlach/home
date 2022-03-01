@@ -72,8 +72,8 @@ bindsym F5 exec "scrot '%Y%m%d.png'"
 assign [class="Alacritty"] $ws1
 assign [class="Brave"] $ws2
 assign [class="Opera"] $ws2
-assign [class="Firefox"] $ws2
 assign [class="Chromium"] $ws2
+assign [class="firefox"] $ws2
 assign [class="(?i)mplayer"] $ws4
 
 # top bar
