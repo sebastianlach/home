@@ -76,28 +76,6 @@ assign [class="Chromium"] $ws2
 assign [class="firefox"] $ws2
 assign [class="(?i)mplayer"] $ws4
 
-# top bar
-bar {
-
-    position top
-    status_command i3blocks
-    strip_workspace_numbers yes
-    tray_output primary
-    tray_padding 0
-    separator_symbol |
-
-    colors {
-        background          #000000
-        statusline          #ffffff
-        separator           #ffffff
-        focused_workspace   #ffffff #ffffff #000000
-        active_workspace    #ffffff #ffffff #0000ff
-        inactive_workspace  #000000 #000000 #ffffff
-        urgent_workspace    #000000 #000000 #0000ff
-    }
-
-}
-
 # execute statup
 exec --no-startup-id feh --bg-center ~/.config/wallpaper.png
 exec --no-startup-id $terminal

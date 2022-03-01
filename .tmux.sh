@@ -1,1 +1,1 @@
-echo -n $( uptime -p )' | '$( cat /proc/loadavg | cut -d' ' -f1-3 )
+echo -n $( cat /sys/class/power_supply/BAT0/capacity )'% | '$( date +"%H:%m:%S | %d %B %Y" )
